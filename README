@@ -4,7 +4,7 @@ This project is unmaintained since the first version was come out in June, 2011.
 
 System requirement for development:
 1. JDK7 32-bit version(since only 32-bit JMF package is available, one should install 32-bit JDK to link this API),
-2. JAVA Media Framework API
+2. JAVA Media Framework API(also known as JMF)
 
 Contributors:
 Chia-Che, Hsu
