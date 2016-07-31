@@ -3,10 +3,37 @@ P2PMessenger is a peer-to-peer chating software which includes multi-media strea
 This project is unmaintained since the first version was come out in June, 2011.
 
 System requirement for development:
-1. JDK7 32-bit version(since only 32-bit JMF package is available, one should install 32-bit JDK to link this API),
-2. JAVA Media Framework API(also known as JMF)
+-------------------------------
+
+	1. JDK7 32-bit version(since only 32-bit JMF package is available, one should install 32-bit JDK to link this API),
+	2. JAVA Media Framework API(also known as JMF)
+
+Build
+-------------------------------
+
+	Environment variable require: 
+	JAVA_HOME
+	JMF_HOME
+
+	The JAVA_HOME variable is require to locate your jdk home path.(ex: If you install jdk 1.7.0_79 under "/home/USER1", then the JAVA_HOME should be "/home/USER1/jdk1.7.0_79")
+	The JMF_HOME is the installation path of the JMF framework. If the JMF classes have been added to the CLASSPATH environment path by the official installer, then JMF_HOME can be ignored.
+
+	To building the peer program:
+	make PeerUI
+
+	To building the server program:
+	make MultiChatServer
+
+	or building the both:
+	make
+	make all
+
+	Clean all class file:
+	make clean
 
 Contributors:
-Chia-Che, Hsu
-James, Chang
-Ming-Lung, Cheng
+-------------------------------
+
+	Chia-Che, Hsu
+	James, Chang
+	Ming-Lung, Cheng
