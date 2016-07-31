@@ -15,13 +15,14 @@ JAVAC_FLAGS = -encoding big5
 all: PeerUI MultiChatServer
 
 PeerUI:
-	${JAVAC} ${JAVAC_FLAGS} -sourcepath ${SOURCEPATH} -cp ${CLASSPATH}:${JMF_CLASSPATH} userInterface/PeerUI.java
+	"${JAVAC}" ${JAVAC_FLAGS} -sourcepath "${SOURCEPATH}" -cp "${CLASSPATH}":"${JMF_CLASSPATH}" userInterface/PeerUI.java
 
 MultiChatServer:
-	${JAVAC} ${JAVAC_FLAGS} -sourcepath ${SOURCEPATH} -cp ${CLASSPATH}:${JMF_CLASSPATH} userInterface/MultiChatServerInterface.java
+	"${JAVAC}" ${JAVAC_FLAGS} -sourcepath "${SOURCEPATH}" -cp "${CLASSPATH}":"${JMF_CLASSPATH}" userInterface/MultiChatServerInterface.java
 
 ifeq ($(OS), Windows_NT)
 clean:
+	del *.class /s
 else 
 clean:
 	find -name *.class -delete
